@@ -4,6 +4,7 @@ const Person = require('./Person')
 describe('Person class', () => {
     const newBag = new Bag(25)
     const newPerson = new Person('Suzanne')
+    newPerson.bags = []
 
     test('Person has name', () => {
         expect(newPerson.name).toBe('Suzanne')
